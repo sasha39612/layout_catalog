@@ -11,21 +11,27 @@
 
   &__photo {
     @include item-center;
-    padding: 30px 5px 0;
-  }
-
-  &__photo-img {
+    margin: 30px 5px 0;
     width: $card-photo-width;
     height: $card-photo-heigth;
+    margin-bottom: 45px;
+
+    transition: transform 1s;
   }
 
+  &__photo:hover {
+    border: $borderWidthHover solid #f3f3f3;
+    border-radius: 5px;
+    transform: scale(1.2) translate(-3px, -14px);
+    margin-bottom: 39px;
+  }
+  
   &__title {
     @include space-start-content;
     height: 31px;
     font-weight: $font-weight-500;
     font-size: $font-size-12;
     line-height: $font-size-12 * 1.25;
-    padding-top: 45px;
   }
 
   &__code {
@@ -66,6 +72,8 @@
     margin-top: 20px;
     text-transform: uppercase;
     color: #fff;
+
+    transition: color 0.3s, background-color 0.3s;
   }
 
   &__button:hover {
