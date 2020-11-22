@@ -11,9 +11,9 @@
 
   &__photo {
     @include item-center;
-    margin: 30px 5px 0;
     width: $card-photo-width;
     height: $card-photo-heigth;
+    margin: 30px 5px 0;
     margin-bottom: 45px;
 
     transition: transform 1s;
