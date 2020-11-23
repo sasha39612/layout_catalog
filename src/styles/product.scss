@@ -13,17 +13,17 @@
     @include item-center;
     width: $card-photo-width;
     height: $card-photo-heigth;
-    margin: 30px 5px 0;
-    margin-bottom: 45px;
-
+    margin: 27px 2px 42px;
+    border: $borderWidthHover solid #fff;
+    border-radius: 5px;
+    background-size: cover;
     transition: transform 1s;
   }
 
   &__photo:hover {
-    border: $borderWidthHover solid #f3f3f3;
-    border-radius: 5px;
-    transform: scale(1.2) translate(-3px, -14px);
-    margin-bottom: 39px;
+    border-color: #f3f3f3;
+    transform: scale(1.2) translate(0, -14px);
+    background-size: contain;
   }
   
   &__title {
