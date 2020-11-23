@@ -5,23 +5,23 @@
   width: $product-card-width;
   height: $product-card-height;
   padding: 0 14px;
-  background: #fff;
+  background: $color-white;
   border-radius: 5px;
-  border: $borderWidth solid #f3f3f3;
+  border: $borderWidth solid $color-light-grey;
 
   &__photo {
     @include item-center;
     width: $card-photo-width;
     height: $card-photo-heigth;
     margin: 27px 2px 42px;
-    border: $borderWidthHover solid #fff;
+    border: $borderWidthHover solid $color-white;
     border-radius: 5px;
     background-size: cover;
     transition: transform 1s;
   }
 
   &__photo:hover {
-    border-color: #f3f3f3;
+    border-color: $color-light-grey;
     transform: scale(1.2) translate(0, -14px);
     background-size: contain;
   }
@@ -63,7 +63,7 @@
     @include flex-center;
     width: $card-button;
     height: $card-button / 4.25;
-    background: #00acdc;
+    background: $color-light-blue;
     border-radius: 5px;
     text-decoration: none;
     font-weight: $font-weight-700;
@@ -71,15 +71,15 @@
     line-height: $font-size-14 * 1.25;
     margin-top: 20px;
     text-transform: uppercase;
-    color: #fff;
+    color: $color-white;
+    box-sizing: border-box;
 
     transition: color 0.3s, background-color 0.3s;
   }
 
   &__button:hover {
-    box-sizing: border-box;
-    background: #fff;
-    border: 1px solid #00acdc;
-    color: #00acdc;
+    background: $color-white;
+    border: 1px solid $color-light-blue;
+    color: $color-light-blue;
   }
 }
