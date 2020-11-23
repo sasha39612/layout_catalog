@@ -77,8 +77,7 @@
   }
 
   &__button:hover {
-    width: $card-button - 2 * $borderWidth;
-    height: $card-button / 4.25 - 2 * $borderWidth;
+    box-sizing: border-box;
     background: #fff;
     border: 1px solid #00acdc;
     color: #00acdc;
