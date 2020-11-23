@@ -1,8 +1,9 @@
 
 .main__content {
   @include space-between;
-  flex-wrap: wrap;
-  width: catalogWidth(4);
+  column-gap: $space-between-cards;
+
+  max-width: catalogWidth(4);
   margin: 0 auto;
 
   @media (max-width: catalogWidth(4) - 1px) {
