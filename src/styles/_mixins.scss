@@ -24,7 +24,7 @@
 }
 
 @mixin space-center {
-  display: flex;
+  display: grid;
   align-items: center;
   align-content: center;
 }
