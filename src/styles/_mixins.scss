@@ -41,7 +41,8 @@
 }
 
 @mixin space-between-centered {
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(2, auto);
   justify-content: space-between;
   align-items: center;
 }
@@ -54,4 +55,10 @@
 @mixin flex-column {
   display: flex;
   flex-direction: column;
+}
+
+@mixin catalog {
+  display: grid;
+  grid-template-columns: repeat(8 auto);
+  grid-auto-flow: column;
 }

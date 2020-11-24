@@ -1,7 +1,6 @@
 
 .main__content {
   @include space-between;
-  
   column-gap: $space-between-cards;
 
   max-width: catalogWidth(4);

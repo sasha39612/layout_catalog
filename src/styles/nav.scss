@@ -1,8 +1,6 @@
 .nav {
   &__list {
-    display: grid;
-    grid-template-columns: repeat(8 auto);
-    grid-auto-flow: column;
+    @include catalog;
     list-style: none;
     margin: 0;
   }
